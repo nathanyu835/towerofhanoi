@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Tower of Hanoi</title>
+</head>
+<body onselectstart="return false" oncontextmenu="return false">
+<form name="hanoi">
+
+<div id="title" style="position:absolute;visibility:visible;left:-250px;top:-250px;width:200px;height:20px;font:bold 25px Tahoma;text-align:center;">Tower of Hanoi</div>
+
+<div id="tower1" class="container" style="left:-250px;top:-250px;width:200px;height:200px">
+<div id="verttower1" class="towerV" style="left:99px;top:10px;width:5px;height:170px"></div>
+<div id="horiztower1" class="towerH" style="left:0px;top:175px;width:200px;height:5px"></div>
+<div class="tower">TOWER 1</div>
+</div>
+
+<div id="tower2" class="container" style="left:-250px;top:-250px;width:200px;height:200px">
+<div id="verttower2" class="towerV" style="left:99px;top:10px;width:5px;height:170px"></div>
+<div id="horiztower2" class="towerH" style="left:0px;top:175px;width:200px;height:5px"></div>
+<div class="tower">TOWER 2</div>
+</div>
+
+<div id="tower3" class="container" style="left:-250px;top:-250px;width:200px;height:200px">
+<div id="verttower3" class="towerV" style="left:100px;top:10px;width:5px;height:170px"></div>
+<div id="horiztower3" class="towerH" style="left:0px;top:175px;width:200px;height:5px"></div>
+<div class="tower">TOWER 3</div>
+</div>
+
+<div id="disk1" class="disk" style="left:-250px;top:-250px;width:40px;height:20px;background-color:red"></div>
+<div id="disk2" class="disk" style="left:-250px;top:-250px;width:60px;height:20px;background-color:orange"></div>
+<div id="disk3" class="disk" style="left:-250px;top:-250px;width:80px;height:20px;background-color:yellow"></div>
+<div id="disk4" class="disk" style="left:-250px;top:-250px;width:100px;height:20px;background-color:green"></div>
+<div id="disk5" class="disk" style="left:-250px;top:-250px;width:120px;height:20px;background-color:blue"></div>
+<div id="disk6" class="disk" style="left:-250px;top:-250px;width:140px;height:20px;background-color:purple"></div>
+<div id="disk7" class="disk" style="left:-250px;top:-250px;width:160px;height:20px;background-color:brown"></div>
+<div id="disk8" class="disk" style="left:-250px;top:-250px;width:180px;height:20px;background-color:black"></div>
+
+<div id="settings" class="container" style="left:-250px;top:-250px;width:260px;">
+
+<td>Number of disks</td>
+
+<select name="diskno" onchange="newGame(this)" onclick="prevIndex=this.options.selectedIndex">
+<option value="7" selected>3</option>
+<option value="15">4</option>
+<option value="31">5</option>
+<option value="63">6</option>
+<option value="127">7</option>
+<option value="255">8</option>
+</select>
+
+<input type="button" name="btnSolve" value="Solve" onclick="solve(this)" />
+
+<p>&nbsp;</p>
+
+</div>
+</form>
+</body>
+</html>
